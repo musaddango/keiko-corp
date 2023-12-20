@@ -28,19 +28,6 @@
 	<script type="text/javascript" src="js/main.js" async></script>
 	<script type="text/javascript" src="js/scrollTo.js" async></script>
 
-	<!-- Asynchronously Load CSS files -->
-	<script>
-		function createLink(href){
-			const link = document.createElement('link');
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = href;
-			const head = document.querySelector('head');
-			head.append(link);
-		}
-
-		createLink("css/bootstrap.css");
-	</script>
 </head>
 <body>
 	<!--  Header Section -->
@@ -312,5 +299,17 @@
 	</footer>
 	<!--  End Footer Section  -->
 
+	<!-- Asynchronously Load CSS files -->
+	<script>
+		function createLink(href){
+			const link = document.createElement('link');
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = href;
+			const head = document.querySelector('head');
+			head.append(link);
+		}
+		createLink("css/bootstrap.css");
+	</script>
 </body>
 </html>
